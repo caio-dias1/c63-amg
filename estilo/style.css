@@ -1,0 +1,55 @@
+@charset 'UTF-8';
+
+@font-face {
+    font-family: aquire;
+    src: url('../fontes/aquire-light.otf') format('opentype');
+    font-weight: lighter;
+    font-style: normal;
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+:root {
+    --fonte0: aquire;
+    --fonte1: 'Times New Roman', Times, serif;
+    --cor0: #59554C;
+    --cor1: #F2EFDF;
+    --cor2: #D7D9D7;
+    
+}
+
+
+body {
+    background-color: var(--cor1);
+}
+
+header {
+    background-color: var(--cor0);
+    padding: 10px;
+}
+
+header > h1 {
+    font-family: var(--fonte0);
+    font-size: 3.5vw;
+    text-align: left;
+    color: var(--cor1);
+}
+
+header > p {
+    font-family: var(--fonte1);
+    font-size: 2.5vw;
+    padding: 3px;
+    text-align: left;
+    color: black;
+}
+
+
+footer {
+    background-color: var(--cor0);
+    text-align: center;
+    padding: 6px;
+    color: var(--cor1);
+}
