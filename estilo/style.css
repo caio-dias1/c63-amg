@@ -18,6 +18,7 @@
     --cor0: #606B73;
     --cor1: #F2EFDF;
     --cor2: #D7D9D7;    
+    --cor3: #7A7A7A;
 }
 
 
@@ -26,21 +27,23 @@ body {
 }
 
 header {
-    background-color: var(--cor0);
-    padding: 10px;
-    min-width: 400px;
+    background-image: linear-gradient(to right, var(--cor0), var(--cor3));
+    padding: 10px 0px;
+    min-width: 600px;
 }
 
 header > h1 {
     font-family: var(--fonte0);
-    font-size: 4vw;
+    font-size: 3em;
     text-align: left;
     color: var(--cor1);
+    padding: 10px;
+    min-width: 650px;
 }
 
 header > p {
     font-family: var(--fonte1);
-    font-size: 2vw;
+    font-size: 1em;
     padding: 3px;
     text-align: left;
     color: black;
@@ -48,13 +51,17 @@ header > p {
 }
 
 nav {
+    padding: 7px;
+    border-top: 1px solid black;
     font-family: var(--fonte1);
     text-align: end;
  
 }
 
 nav > a {
-    margin-left: 50px;
+    margin-left: 20px;
+    font-size: 1em;
+    min-width: 620px;
 }
 a {
     text-decoration: none;
